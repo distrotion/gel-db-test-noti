@@ -1,0 +1,32 @@
+type NotiSchema {
+  name: String!
+  related: String!
+  type: String!
+  doctor: String!
+  appointment: String!
+}
+
+
+type ReturnNoti {
+  notilist: [NotiSchema!]!
+}
+
+
+input NewNoti {
+  userid: String!
+  name: String!
+  related: String!
+  type: String!
+  doctor: String!
+  appointment: String!
+}
+
+input UserWhoCall{
+  userid: String!
+}
+
+
+type Mutation {
+  createNoti(input: NewNoti!): String!
+  callNoti(input: UserWhoCall!): ReturnNoti!
+}
