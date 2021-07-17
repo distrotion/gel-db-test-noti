@@ -17,7 +17,7 @@ func Getcol() *mongo.Collection {
 
 var ctx = context.TODO()
 
-var server = "mongodb://localhost:9000/"
+var server = "mongodb://34.101.230.112:27017"
 var db_mongo = "noti_demo2_07_21"
 var collec = "users_noti_demo2_07_21"
 
